@@ -25,7 +25,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/profilepic.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -45,7 +45,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  description: "Example site built with Frank AK's react resume template",
 };
 
 /**
@@ -69,7 +69,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Frank AK.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
