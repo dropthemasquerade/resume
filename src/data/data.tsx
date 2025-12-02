@@ -9,10 +9,10 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -340,23 +340,18 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'dropthemasquerade@gmail.me',
+      href: 'mailto:dropthemasquerade@gmail.me',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'ShenZhen NanShan, China',
+      href: 'https://www.google.com/maps/place/Nanshan,+Shenzhen,+Guangdong+Province,+China/@22.5323471,113.8959922,3a,75y,260h,90t/data=!3m8!1e1!3m6!1sCIHM0ogKEICAgID4tPnjoQE!2e10!3e11!6shttps:%2F%2Flh3.googleusercontent.com%2Fgpms-cs-s%2FAPRy3c-lhd2P9bDlh_7id9uWbN1PH-HqwhfvzoEZTvqip50uBCcqecrD5hzlnfY_Ba2cguJ_S6fVgqpVusoisqbRInnnb7a7Gua74yEWdzlS-2Li7lldcGAhJHWpgMa6L7b56_RGCrZ8ww%3Dw900-h600-k-no-pi0-ya350-ro0-fo100!7i5376!8i2688!4m15!1m8!3m7!1s0x3403eef5f69e972f:0xd78ee0e90eff3922!2sNanshan,+Shenzhen,+Guangdong+Province,+China!3b1!8m2!3d22.5333199!4d113.93041!16s%2Fm%2F0267_n0!3m5!1s0x3403eef5f69e972f:0xd78ee0e90eff3922!8m2!3d22.5333199!4d113.93041!16s%2Fm%2F0267_n0?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'dropthemasquerade',
+      href: 'https://github.com/dropthemasquerade',
     },
   ],
 };
@@ -365,9 +360,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/dropthemasquerade'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/frank-ak-850737181/'}
 ];
