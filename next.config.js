@@ -1,20 +1,37 @@
 /* eslint-env node */
 
-// https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
+  // ⭐ GitHub Pages 必须使用静态导出
+  output: "export",
+  // ⭐ GitHub Pages 不支持 next/image 优化
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "source.unsplash.com",
+      },
+    ],
+  },
+
+  // ⭐ GitHub Pages 路径配置：基于你的仓库名 dropthemasquerade/resume
+  basePath: "/resume",
+  assetPrefix: "/resume/",
+
+  // ⭐ 保留你原本的 webpack + ts loader patch
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
-
-    // Next 12 has multiple TS loaders, and we need to update all of them.
     const tsRules = oneOfRule.oneOf.filter(rule => rule.test && rule.test.toString().includes('tsx|ts'));
-
     tsRules.forEach(rule => {
-      // eslint-disable-next-line no-param-reassign
       rule.include = undefined;
     });
-
     return config;
   },
+
   compress: true,
   generateEtags: true,
   pageExtensions: ['tsx', 'mdx', 'ts'],
@@ -23,17 +40,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: false,
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },{
-        protocol: 'https',
-        hostname: 'source.unsplash.com',
-      },
-    ],
-  },
 };
 
 module.exports = nextConfig;
