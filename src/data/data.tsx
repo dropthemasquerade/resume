@@ -272,34 +272,34 @@ export const education: TimelineItem[] = [
     location: 'Inner Mongolia University of Technology',
     title: 'Bachelor of Engineering in Printing Engineering (Focus on Computer Science & Systems Programming)',
     content: (
-        <div className="space-y-3 leading-relaxed">
+        <div>
           <p>
-            Although my major was Printing Engineering—a traditional and non-computer field—I developed
-            a strong passion for computer science starting from my freshman year. I spent countless hours
-            in the university library studying algorithms, data structures, databases, and operating systems.
+            Although my major was Printing Engineering—a traditional and non-computer field—I developed a strong
+            passion for computer science starting from my freshman year. I spent countless hours in the university
+            library studying algorithms, data structures, databases, and operating systems.
           </p>
 
           <p>
-            During this period, I became deeply immersed in low-level programming using GCC, GDB, and Vim
-            on Linux. Later, when I studied operating systems in depth, I gained a solid understanding of
-            file representation and I/O, which helped me understand network programming concepts such as
-            the epoll model.
+            During this time, I became deeply immersed in low-level programming using GCC, GDB, and Vim on Linux.
+            Later, as I studied operating systems in more depth, I gained a solid understanding of file systems and
+            I/O mechanisms, which laid the foundation for my later work in network programming, including concepts
+            such as the <code>epoll</code> model.
           </p>
 
           <p>
-            I later joined ACM/ICPC competitions and won awards in university contests. I also helped deploy
-            and maintain the internal ACM judging system, gaining real-world experience with databases,
-            caching, HTTP services, and Nginx.
+            I also participated in ACM/ICPC competitions and won awards in university contests. In addition, I helped
+            deploy and maintain the university’s internal ACM online judge system, gaining firsthand experience with
+            databases, caching systems, HTTP services, and Nginx in a real-world environment.
           </p>
 
           <p>
-            Toward graduation, I joined the Computer Science department’s graduate internship program and
-            worked on a production project using C and Python to parse the JT/T 808 protocol and design the
-            architecture for GPS/Beidou telemetry data ingestion and forwarding.
+            Toward graduation, I joined the Computer Science department’s graduate internship program, where I worked
+            on a production project using C and Python to parse the JT/T 808 protocol and design the architecture for
+            GPS/Beidou telemetry data ingestion, cleansing, and forwarding.
           </p>
 
           <p>
-            Source code:{" "}
+            Source code:
             <a
                 href="https://github.com/land-pack/jtt808"
                 target="_blank"
@@ -310,8 +310,8 @@ export const education: TimelineItem[] = [
             </a>
           </p>
         </div>
-    ),
-  },
+    )
+  }
 ];
 
 export const experience: TimelineItem[] = [
@@ -320,10 +320,10 @@ export const experience: TimelineItem[] = [
     location: 'Awesome Development Company',
     title: 'Senior UX Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+        <p>
+          Describe work, special projects, notable achievements, what technologies you have been working with, and
+          anything else that would be useful for an employer to know.
+        </p>
     ),
   },
   {
@@ -331,10 +331,10 @@ export const experience: TimelineItem[] = [
     location: 'Garage Startup Studio',
     title: 'Junior bug fixer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+        <p>
+          Describe work, special projects, notable achievements, what technologies you have been working with, and
+          anything else that would be useful for an employer to know.
+        </p>
     ),
   },
 ];
