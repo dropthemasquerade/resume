@@ -301,10 +301,10 @@ export const education: TimelineItem[] = [
           <p>
             Source code:
             <a
-                href="https://github.com/land-pack/jtt808"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-blue-600 underline"
+                href="https://github.com/land-pack/jtt808"
+                rel="noopener noreferrer"
+                target="_blank"
             >
               https://github.com/land-pack/jtt808
             </a>
