@@ -268,16 +268,22 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Sep 2012 – Jun 2016 ',
+    location: 'Inner Mongolia University of Technology',
+    title: 'Bachelor of Engineering in Printing Engineering (Focus on Computer Science & Systems Programming)',
+    content: <p>                              University Experience
+
+      Although my major was Printing Engineering—a traditional and non-computer field—I developed a strong passion for computer science starting from my freshman year. I spent countless hours in the university library studying computer science, learning from thick marble-covered textbooks on algorithms, data structures, databases, and operating systems.
+
+      During this period, I became deeply immersed in low-level programming. I spent a long time working with GCC, GDB, and writing code in Vim on Linux, enjoying the feeling of interacting directly with the machine through every line of code. Later, when I studied operating systems in depth, I developed a solid understanding of how files are represented inside a computer, and this I/O background gave me a strong foundation for understanding network programming concepts such as the epoll model.
+
+      I was later introduced to ACM/ICPC, where I won awards in university competitions. I also helped the school deploy and maintain the internal ACM judging system, which allowed me to apply my knowledge of databases, caching systems, HTTP services, and Nginx in a real-world environment for the first time.
+
+      Toward graduation, I was invited by the head of the Computer Science department to join their graduate internship program. During this time, I worked on a production project using C and Python to parse the JT/T 808 protocol and design the architecture for GPS/Beidou telemetry data ingestion, cleansing, and forwarding.
+      The related source code is available at:
+      https://github.com/land-pack/jtt808
+
+      My university years allowed me to fully experience the beauty of computer science and appreciate its endless depth and interconnected technological landscape.</p>,
   },
 ];
 
