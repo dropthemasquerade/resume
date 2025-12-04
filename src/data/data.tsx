@@ -21,10 +21,6 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -125,17 +121,13 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'Chinese',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+        name: 'English',
+        level: 5,
+      }
     ],
   },
   {
@@ -150,7 +142,7 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'Vue',
         level: 6,
       },
     ],
@@ -159,26 +151,22 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Golang',
+        level: 9,
+      },
+      {
+        name: 'Python',
         level: 8,
       },
       {
         name: 'Rust',
         level: 5,
       },
-      {
-        name: 'Golang',
-        level: 4,
-      },
     ],
   },
   {
     name: 'Mobile development',
     skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
       {
         name: 'Flutter',
         level: 4,
@@ -204,62 +192,38 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '/',
     image: porfolioImage2,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '/',
     image: porfolioImage3,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '/',
     image: porfolioImage4,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '/',
     image: porfolioImage5,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '/',
     image: porfolioImage6,
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '/',
     image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
@@ -316,27 +280,62 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'March 2021 – Present ',
+    location: 'Shenzhen, China',
+    title: 'Tencent Technology (Shenzhen) Co., Ltd. — Senior Backend (Golang) Engineer',
     content: (
-        <p>
-          Describe work, special projects, notable achievements, what technologies you have been working with, and
-          anything else that would be useful for an employer to know.
-        </p>
+        <div className="experience">
+          <h3>Tencent – Lead Backend Engineer</h3>
+          <i>
+            Lead backend engineer responsible for building core payment infrastructure, distributed billing pipelines,
+            and internal developer productivity tools across Tencent’s payment and merchant service systems.
+          </i>
+
+          <div className="subsection">
+            <p><strong>1. Core Infrastructure Development (Golang)</strong></p>
+            <ul>
+              <li>Designed and implemented foundational backend components including:</li>
+              <li>File service framework for high-volume asynchronous file processing</li>
+              <li>Distributed task scheduler supporting delayed tasks, cron workflows, and retry semantics</li>
+              <li>Internal code generator and service scaffolding to accelerate microservice development</li>
+              <li>Improved average developer onboarding efficiency by 40% through automated service templates and code
+                generation tools
+              </li>
+            </ul>
+          </div>
+
+          <div className="subsection">
+            <p><strong>2. Distributed Billing & Payment Infrastructure</strong></p>
+            <ul>
+              <li>Designed multi-region merchant billing pipelines that process tens of millions of transactions daily
+              </li>
+              <li>Built reconciliation workflows and automated validation rules to reduce settlement inconsistencies
+              </li>
+              <li>Optimized distributed transaction throughput and reduced billing latency by 35%</li>
+              <li>Implemented retry, compensation, and fault-tolerant logic for cross-service financial operations</li>
+            </ul>
+          </div>
+
+          <div className="subsection">
+            <p><strong>3. Redis & High-Performance Caching</strong></p>
+            <ul>
+              <li>Designed Redis-based distributed caching for hot payment and merchant data</li>
+              <li>Reduced MySQL pressure by 60% through caching and write-behind patterns</li>
+              <li>Implemented Redis streams for real-time log/event aggregation</li>
+            </ul>
+          </div>
+
+          <div className="subsection">
+            <p><strong>4. API Gateway & APISIX Automation</strong></p>
+            <ul>
+              <li>Maintained APISIX routing, upstream management, and tenant-level domain strategies</li>
+              <li>Built automation tools for domain binding, route generation, and health check configuration</li>
+              <li>Reduced manual APISIX configuration time by 60%</li>
+            </ul>
+          </div>
+        </div>
     ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-        <p>
-          Describe work, special projects, notable achievements, what technologies you have been working with, and
-          anything else that would be useful for an employer to know.
-        </p>
-    ),
-  },
+  }
 ];
 
 /**
