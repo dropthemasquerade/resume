@@ -4,6 +4,7 @@ const nextConfig = {
   // ⭐ GitHub Pages 必须使用静态导出
   output: "export",
   // ⭐ GitHub Pages 不支持 next/image 优化
+
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -19,8 +20,8 @@ const nextConfig = {
   },
 
   // ⭐ GitHub Pages 路径配置：基于你的仓库名 dropthemasquerade/resume
-  basePath: "/resume",
-  assetPrefix: "/resume/",
+  basePath: '',              // 如果你希望在根域名访问，就保持空
+  assetPrefix: '',           // 同上
 
   // ⭐ 保留你原本的 webpack + ts loader patch
   webpack: config => {
